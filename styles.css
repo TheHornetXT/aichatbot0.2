@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* File Icon */
+.file-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.saved-files {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #2c2c2c;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.saved-files ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.saved-files li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.saved-files li:hover {
+  background: #444;
+}
+
+/* Chatbot Container */
+.container_chat_bot {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  background: #2c2c2c;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-chat-options {
+  position: relative;
+  display: flex;
+  background: linear-gradient(to bottom right, #7e7e7e, #363636, #363636, #363636, #363636);
+  border-radius: 16px;
+  padding: 1.5px;
+  overflow: hidden;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#chat-log {
+  height: 300px;
+  padding: 10px;
+  overflow-y: auto;
+  background: #1b1b1b;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#chat-log .message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+#chat-log .user {
+  background: #444;
+  align-self: flex-end;
+}
+
+#chat-log .assistant {
+  background: #555;
+  align-self: flex-start;
+}
+
+textarea {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.btns-add {
+  display: flex;
+  gap: 8px;
+}
+
+.btns-add button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-submit {
+  background: #555;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.tags span {
+  background: #444;
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
